@@ -1,3 +1,5 @@
+import os
+import sys
 
 # SAPI Maker  
 # By RDIL  
@@ -9,9 +11,12 @@ if(codeMode == "1"):
 else:
     texttowrite = input("Please open the file labled SAPI.vbs and delete any text inside it.  Then type in what you want to be said here: ")
 sapifile = open("SAPI.vbs", "a")
-sapifile.write('Dim message, sapi')
-sapifile.write('message="'+texttowrite+'"')
-sapifile.write('Set sapi=CreateObject("sapi.spvoice")')
-sapifile.write('sapi.Speak message')
+sapifile.write('Dim message, sapi\n')
+sapifile.write('message="'+texttowrite+'"\n')
+sapifile.write('Set sapi=CreateObject("sapi.spvoice")\n')
+sapifile.write('sapi.Speak message\n')
+sapifile.close()
 
-               
+os.system("start SAPI.vbs")  
+
+sys.exit()
