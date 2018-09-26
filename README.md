@@ -6,4 +6,4 @@ Make your computer speek, the simple way!
 
 ### Download  
 Please download the latest release from the releases section.  
-* Latest Release: v1.01   
+* Latest Release: v1.1.0   
