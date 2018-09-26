@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='SAPI-Maker',
-    version='v1.0.0',
+    version='v1.1.0',
     packages=[''],
     url='https://github.com/RDIL/SAPI-Maker',
     license='MIT License',
